@@ -1,0 +1,87 @@
+baseURL = 'http://example.org/'
+languageCode = 'fr-fr'
+title = ''
+theme = 'soho'
+DefaultContentLanguage = "fr"
+enableInlineShortcodes = true
+summarylength = 10
+enableEmoji = true
+paginate = 5
+ignoreErrors = ["error-remote-getjson"]
+
+
+[params]
+title = ""
+description = ""
+# gravatar = "soho@example.com"
+images = ["images/profile.png"]
+profilePicture = "Images/ROOFTOP1625.png"
+copyright = ""
+license = ""
+licenseURL = ""
+builtWith = true
+mainSections = ["post"]
+
+## Set custom theme color.
+# themeColor = "#fc2803"
+
+  [[params.socialIcons]]
+  icon = "fa-linkedin"
+  title = "Linkedin"
+  url = "#"
+
+  [[params.socialIcons]]
+  icon = "fa-github"
+  title = "GitHub"
+  url = "https://github.com/alexandrevicenzi/soho"
+
+  [[params.socialIcons]]
+  icon = "fa-twitter"
+  title = "Twitter"
+  url = "#"
+
+[menu]
+
+  [[menu.main]]
+  name = "Liens"
+  identifier = "liens"
+  weight = 10
+  url = "/liens/"
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[privacy]
+
+  [privacy.vimeo]
+    disabled = false
+    simple = true
+
+  [privacy.twitter]
+    disabled = false
+    enableDNT = true
+    simple = true
+
+  [privacy.instagram]
+    disabled = false
+    simple = true
+
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
+
+[services]
+
+  [services.instagram]
+    disableInlineCSS = true
+
+  [services.twitter]
+    disableInlineCSS = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      # needed to render raw HTML (e.g. <sub>, <sup>, <kbd>, <mark>)
+      unsafe = true
